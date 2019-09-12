@@ -1,0 +1,29 @@
+<head>​
+
+<script>​
+
+window.dataLayer = window.dataLayer || []; //Creating the dataLayer object​
+
+dataLayer.push({​
+
+'Mode’: {{Mode}}, // Mode​
+
+‘PageName’: {{pagename}}, //Dynamic page name​
+
+});​
+
+</script>​
+
+//First GTM Container snippet​
+
+...​
+
+</head>​
+
+<body>​
+
+//Second GTM Container snippet​
+
+...​
+
+</body>
