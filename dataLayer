@@ -7,8 +7,8 @@ window.dataLayer = window.dataLayer || []; //Creating the dataLayer object​
 dataLayer.push({​
 
 'Mode’: {{Mode}}, // Mode​
-
 ‘PageName’: {{pagename}}, //Dynamic page name​
+'GA_id': {{cid}}, //Google Analytics client ID
 
 });​
 
