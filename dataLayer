@@ -45,14 +45,14 @@ dataLayer.push({
      {
        // Name or ID is required
        'name': {{contentName}}, //if available       
-       'id': {{contentIDs}}, 
-       'position': {{positionInPage}} //eg 1
+       'id': {{moduleIDs_contentIDs}}, 
+       'position': {{positionInPage}} //eg 1 optional
      },
      {
        // Name or ID is required
        'name': {{contentName}}, //if available       
-       'id': {{contentIDs}}, 
-       'position': {{positionInPage}} /eg 2
+       'id': {{moduleIDs_contentIDs}}, 
+       'position': {{positionInPage}} /eg 2 optional
      }]
 
 });
