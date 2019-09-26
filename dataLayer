@@ -31,10 +31,16 @@ dataLayer.push({
 'Zone': {{zoneIDs}}, //Concatenation of zone IDs deployed in page
 'pageLayout': {{moduleIDs_contentIDs_zoneIDs}}, //Concatenation of module-content-zone IDs deployed in page regardless of whether or not they were visible
 
-//Content engagement
-'email': {{valid}}, //populate if valid email collected
-'location': {{location}}, //location inserted by the user in the form
-'propertyType': {{propertyType}}, //property type selected by the user
+//Content engagement - Data inserted by users
+'email': {{valid}}, //boolean populate if valid email collected
+'phone': {{valid}}, //boolean populate if valid phone number collected
+'propertyName': {{propertyName}}, //property name form
+'propertyStreet': {{propertyStreet}}, //property street form
+'propertyType': {{propertyType}}, //property type form
+'country': {{country}}, //country form
+'city': {{city}}, //city form
+'street': {{street}}, //street form
+'zip': {{zip}}, //zip form
 
 //Internal Search query
 'searchTerm': {{searchTerm}}, //term searched by the user in the internal search bar
