@@ -7,7 +7,7 @@ window.dataLayer = window.dataLayer || []; //Creating the dataLayer object
 dataLayer.push({
 
 //Page details
-‘pageName’: {{pageName}}, //Dynamic page name
+'pageName': {{pageName}}, //Dynamic page name
 'pageCategory1': {{pageCategory1}}, //Based on breadcrumb-sitemap level 1 mainHomePage, HPs (eg howItWorks, resources, tools, successStories, helpFaq, other)
 'pageCategory2': {{pageCategory2}}, //Based on breadcrumb-sitemap level 2 category (eg revenueManagementCategoryOverview, distributionStrategyCategoryOverview,...)
 'pageCategory3': {{pageCategory3}}, //Based on breadcrumb-sitemap level 3 subCategory (eg howToCalculateRevPar, revenueManagementAcronyms)
