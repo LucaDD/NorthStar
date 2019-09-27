@@ -19,10 +19,11 @@ dataLayer.push({
 
 //IDs
 'GAID': {{cid}}, //Google Analytics client ID
-'EPCsessionID': {{EPCsessionID}}, //a common key between native app events and app-hosted reactive web-views
+'EPCsessionID': {{EPCsessionID}}, //a common key between native app events and app-hosted reactive web-views (EPCSession)
 'MarketoID': {{MarketoID}}, //ID assigned by Marketo
-'XDID': {{XDID}}, //gives us the ability to track visitors/users across pretty much all EG sites eventually (including HomeAway)
-'PropertyID': {{EID}}, //Expedia ID
+'XDID': {{XDID}}, //gives us the ability to track visitors/users across pretty much all EG sites eventually (including HomeAway) (xdid)
+'PropertyID': {{EID}}, //Expedia ID (VSUPID)
+'nsLanguageID' : {{nsLanguageID}}, //Language ID (UnoLangId)
 
 //Content details
 'Mode’: {{Mode}}, // Mode
