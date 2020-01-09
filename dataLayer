@@ -16,6 +16,7 @@ dataLayer.push({
 'nsLanguage': {{siteLanguage}}, //language selected by the user
 'topicOfInterest': {{topicOfInterest}}, //eg channel management, enhance your listing, ...
 'focalValue': {{focalValue}}, //eg BML, bookings, checkout, content, ...
+'environment': {{environment}}, //eg development, staging, production
 
 //IDs
 'GAID': {{cid}}, //Google Analytics client ID
