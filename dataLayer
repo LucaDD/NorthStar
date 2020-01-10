@@ -8,14 +8,14 @@ dataLayer.push({
 
 //Page details
 'pageName': {{pageName}}, //Dynamic page name
-'pageCategory1': {{pageCategory1}}, //Based on breadcrumb-sitemap level 1 mainHomePage, HPs (eg howItWorks, resources, tools, successStories, helpFaq, other)
-'pageCategory2': {{pageCategory2}}, //Based on breadcrumb-sitemap level 2 category (eg revenueManagementCategoryOverview, distributionStrategyCategoryOverview,...)
-'pageCategory3': {{pageCategory3}}, //Based on breadcrumb-sitemap level 3 subCategory (eg howToCalculateRevPar, revenueManagementAcronyms)
+'pageCategory1': {{pageCategory1}}, //Based on meta tag set by content user, HPs (eg howItWorks, resources, tools, successStories, helpFaq, other)
+'pageCategory2': {{pageCategory2}}, //Based on meta tag set by content user (eg revenueManagementCategoryOverview, distributionStrategyCategoryOverview,...)
+'pageCategory3': {{pageCategory3}}, //Based on meta tag set by content user (eg howToCalculateRevPar, revenueManagementAcronyms)
 'pageAuthor': {{author}}, //post author
 'pageError': {{pageError}}, //Type of error in page (404)
 'nsLanguage': {{siteLanguage}}, //language selected by the user
-'topicOfInterest': {{topicOfInterest}}, //eg channel management, enhance your listing, ...
-'focalValue': {{focalValue}}, //eg BML, bookings, checkout, content, ...
+'topicOfInterest': {{topicOfInterest}}, //eg Based on meta tag set by content user eg channel management, enhance your listing, ...
+'focalValue': {{focalValue}}, //Based on meta tag set by content user eg BML, bookings, checkout, content, ...
 'environment': {{environment}}, //eg development, staging, production
 
 //IDs
@@ -46,6 +46,7 @@ dataLayer.push({
 
 //Internal Search query
 'searchTerm': {{searchTerm}}, //term searched by the user in the internal search bar
+'searchCategory': {{searchCategory}}, //filter categories shown to the user in the search results page
 
 //Impressions tracking
  'ecommerce': {
