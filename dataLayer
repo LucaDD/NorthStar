@@ -8,6 +8,7 @@ dataLayer.push({
 
 //Page details
 'pageName': {{pageName}}, //Dynamic page name
+'pageFriendlyName': {{pageFriendlyName}}, //Based on meta tag
 'pageCategory1': {{pageCategory1}}, //Based on meta tag set by content user, HPs (eg howItWorks, resources, tools, successStories, helpFaq, other)
 'pageCategory2': {{pageCategory2}}, //Based on meta tag set by content user (eg revenueManagementCategoryOverview, distributionStrategyCategoryOverview,...)
 'pageCategory3': {{pageCategory3}}, //Based on meta tag set by content user (eg howToCalculateRevPar, revenueManagementAcronyms)
