@@ -26,6 +26,7 @@ dataLayer.push({
 'XDID': {{XDID}}, //gives us the ability to track visitors/users across pretty much all EG sites eventually (including HomeAway) (xdid)
 'PropertyID': {{EID}}, //Expedia ID (VSUPID)
 'nsLanguageID' : {{nsLanguageID}}, //Language ID (UnoLangId)
+'userIP': {{userIP}}, //User IP
 
 //Content details
 'Mode’: {{Mode}}, // Mode
