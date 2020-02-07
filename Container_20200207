@@ -29,7 +29,7 @@ dataLayer.push({
 'userIP': {{userIP}}, //User IP
 
 //Content details
-'Mode’: {{Mode}}, // Mode
+--'Mode’: {{Mode}}, // Mode based on presence-non presence of VSUPID (eg prospect, partner)
 'Module': {{module}}, //Contactenation of modules deployed in page
 'Content': {{contentIDs}}, //Concatenation of content IDs deployed in page
 'Zone': {{zoneIDs}}, //Concatenation of zone IDs deployed in page
