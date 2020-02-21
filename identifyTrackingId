@@ -1,0 +1,17 @@
+function()
+{
+    	document.addEventListener("click", event => 
+        {
+        	let clickedItem = event.target;
+        	if (clickedItem.getAttribute('data-tracking-id') !== null) 
+            {
+            clickedItem = clickedItem.getAttribute('data-tracking-id');
+            return clickedItem;
+        	} 
+          	else if (clickedItem.getAttribute('data-tracking-id') === null && 				clickedItem.closest('div').getAttribute('data-tracking-id') !== null) 
+            {
+            clickedItem = clickedItem.closest('div').getAttribute('data-tracking-id');
+            return clickedItem;
+        	}
+    	});
+}
