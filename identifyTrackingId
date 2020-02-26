@@ -1,17 +1,33 @@
-function()
-{
-    	document.addEventListener("click", event => 
-        {
-        	let clickedItem = event.target;
-        	if (clickedItem.getAttribute('data-tracking-id') !== null) 
-            {
+// polyfill for IE 'closest()'
+if (!Element.prototype.matches) {
+    Element.prototype.matches =
+        Element.prototype.msMatchesSelector ||
+        Element.prototype.webkitMatchesSelector;
+}
+if (!Element.prototype.closest) {
+    Element.prototype.closest = function(s) {
+        var el = this;
+        do {
+            if (el.matches(s)) return el;
+            el = el.parentElement || el.parentNode;
+        } while (el !== null && el.nodeType === 1);
+        return null;
+    };
+}
+/*
+namespace because we're not savages
+listen for clicks on the whole document
+return the clicked element’s data attribute
+*/
+((function() {
+    document.addEventListener("click", function(event) {
+        let clickedItem = event.target;
+        if (clickedItem.getAttribute('data-tracking-id') !== null) {
             clickedItem = clickedItem.getAttribute('data-tracking-id');
             return clickedItem;
-        	} 
-          	else if (clickedItem.getAttribute('data-tracking-id') === null && 				clickedItem.closest('div').getAttribute('data-tracking-id') !== null) 
-            {
+        } else if (clickedItem.getAttribute('data-tracking-id') === null && clickedItem.closest('div').getAttribute('data-tracking-id') !== null) {
             clickedItem = clickedItem.closest('div').getAttribute('data-tracking-id');
             return clickedItem;
-        	}
-    	});
-}
+        }
+    });
+})();
