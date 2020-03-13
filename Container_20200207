@@ -7,8 +7,8 @@ window.dataLayer = window.dataLayer || []; //Creating the dataLayer object
 dataLayer.push({
 
 //Page details
---'pageName': {{pageName}}, //Last value in the page path without parameters
---'pageFriendlyName': {{pageFriendlyName}}, //Based on meta tag
+'pageName': {{pageName}}, //Last value in the page path without parameters
+'pageFriendlyName': {{pageFriendlyName}}, //Based on meta tag
 'pageCategory1': {{pageCategory1}}, //Based on meta tag set by content user, HPs (eg howItWorks, resources, tools, successStories, helpFaq, other)
 'pageCategory2': {{pageCategory2}}, //Based on meta tag set by content user (eg revenueManagementCategoryOverview, distributionStrategyCategoryOverview,...)
 'pageCategory3': {{pageCategory3}}, //Based on meta tag set by content user (eg howToCalculateRevPar, revenueManagementAcronyms)
@@ -17,19 +17,19 @@ dataLayer.push({
 'nsLanguage': {{siteLanguage}}, //language selected by the user
 'topicOfInterest': {{topicOfInterest}}, //eg Based on meta tag set by content user eg channel management, enhance your listing, ...
 'focalValue': {{focalValue}}, //Based on meta tag set by content user eg BML, bookings, checkout, content, ...
---'environment': {{environment}}, //eg development, staging, production
+'environment': {{environment}}, //eg development, staging, production
 
 //IDs
---'GAID': {{cid}}, //Google Analytics client ID
+'GAID': {{cid}}, //Google Analytics client ID
 'EPCsessionID': {{EPCsessionID}}, //a common key between native app events and app-hosted reactive web-views (EPCSession)
 'MarketoID': {{MarketoID}}, //ID assigned by Marketo
 'XDID': {{XDID}}, //gives us the ability to track visitors/users across pretty much all EG sites eventually (including HomeAway) (xdid)
---'PropertyID': {{EID}}, //Expedia ID (VSUPID)
+'PropertyID': {{EID}}, //Expedia ID (VSUPID)
 'nsLanguageID' : {{nsLanguageID}}, //Language ID (UnoLangId)
 'userIP': {{userIP}}, //User IP
 
 //Content details
---'Mode’: {{Mode}}, // Mode based on presence-non presence of VSUPID (eg prospect, partner)
+'Mode’: {{Mode}}, // Mode based on presence-non presence of VSUPID (eg prospect, partner)
 'Module': {{module}}, //Contactenation of modules deployed in page
 'Content': {{contentIDs}}, //Concatenation of content IDs deployed in page
 'Zone': {{zoneIDs}}, //Concatenation of zone IDs deployed in page
