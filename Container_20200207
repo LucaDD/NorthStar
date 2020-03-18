@@ -18,7 +18,7 @@ dataLayer.push({
 --'topicOfInterest': {{topicOfInterest}}, //eg Based on meta tag set by content user eg channel management, enhance your listing, ...
 --'focalValue': {{focalValue}}, //Based on meta tag set by content user eg BML, bookings, checkout, content, ...
 -'environment': {{environment}}, //eg development, staging, production
---'
+--'siteName': {{siteName}}, //identify the current website based on hostname
 
 //IDs
 -'GAID': {{cid}}, //Google Analytics client ID
