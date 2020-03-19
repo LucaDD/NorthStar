@@ -52,7 +52,7 @@ dataLayer.push({
 
 //Missing or removed
 XXX'Content': {{contentIDs}}, //Concatenation of content IDs deployed in page
-XXXX'searchCategory': {{searchCategory}}, //filter categories shown to the user in the search results page
+XXX'searchCategory': {{searchCategory}}, //filter categories shown to the user in the search results page
 XXX'nsLanguageID' : {{nsLanguageID}}, //Language ID (UnoLangId)
 
 //Impressions tracking
