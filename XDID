@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Pix</title>
+    <!--script src="dist/app.js" async defer></script-->
+    <script>
+        window.travelPixel = window.travelPixel || [];
+    </script>
+</head>
+<body>
+    <h1>Pix</h1>
+</body>
+<script>
+    window.travelPixel.push(function runTravelPixel(Waiter) {
+        var waiter = new Waiter('welcome.expediagroup.com', 'prod');
+        waiter.loadXdidApi({'serverPlatform': 'welcomeExpediagroupCom'}).then(function (xdidValue) {
+            console.log('found XDID value:', xdidValue);
+        });
+    });
+</script>
+
+</html>
